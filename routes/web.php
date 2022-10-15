@@ -46,7 +46,7 @@ Route::group([
 
     Route::get('/about', 'about')->name('about');
 });
-
+  
 
 
 Route::get('/post/{id}', [PageController::class, 'postShow'])->name('post.show');
@@ -66,4 +66,6 @@ Route::get('/post/{id}', [PageController::class, 'postShow'])->name('post.show')
 
 // Route::get('/about', [PageController::class, 'about']);
 
+
+Route::get('/test/blade', [PageController::class, 'test_blade']);
 
